@@ -1,11 +1,8 @@
 import React from 'react'
 import {Button} from '@mui/material';
 import axios from 'axios';
-import {Await, Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import './book.css';
-
-
-
 
 const Book = (props) => {
 
@@ -32,10 +29,8 @@ const Book = (props) => {
 
     <Button LinkComponent={Link} to={`/books/${_id}`} >Update</Button>
     <Button onClick={handleDelete}> Delete</Button>
-
+    
   </div>
-  
-  
   </>
   )
 }

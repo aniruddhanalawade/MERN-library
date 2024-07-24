@@ -4,7 +4,6 @@ import { useParams,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import toast, {Toaster} from 'react-hot-toast'
 
-
 const BookDetails = () => {
 
   const {id} = useParams();
@@ -14,6 +13,8 @@ const BookDetails = () => {
   const [ checked,setChecked] = useState(false);
 
   const navigate = useNavigate();
+
+//This is an asynchronous function defined inside the useEffect that fetches book data from the backend.
 
   useEffect(() => {
   const fetchBoks = async () => {
@@ -118,16 +119,9 @@ const BookDetails = () => {
               onChange={() => setChecked(!checked)}
             />
           } label="Availabel" />
-
           <Button type='submit' variant='outlined'>Add Book</Button>
-
         </Box>
-
       </form>
-
-    
-    
-    
     </>
   )
 }

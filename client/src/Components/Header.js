@@ -23,15 +23,15 @@ const Header = () => {
 
             <Tab LinkComponent={NavLink} to='/add' label='Add Book'/>
             <Tab LinkComponent={NavLink} to='/books' label='Books'/>
-            <Tab LinkComponent={NavLink} to='/MERN library' label='Home'/>
+            <Tab LinkComponent={NavLink} to='/MERN-library' label='Home'/>
             <Tab LinkComponent={NavLink} to='/about' label='About'/>
+            <Tab LinkComponent={NavLink} to='/login' label='Login'/>
+            <Tab LinkComponent={NavLink} to='/signin' label='Signin'/>
           </Tabs>
         </Toolbar>
     </AppBar>
-    
-    
     </>
   )
 }
 
-export default Header
+export default Header 
